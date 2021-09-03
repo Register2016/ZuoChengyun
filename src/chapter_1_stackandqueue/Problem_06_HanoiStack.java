@@ -2,6 +2,10 @@ package chapter_1_stackandqueue;
 
 import java.util.Stack;
 
+/**
+ * 汉诺塔问题
+ *
+ */
 public class Problem_06_HanoiStack {
 
 	public static int hanoiProblem1(int num, String left, String mid,

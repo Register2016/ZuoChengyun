@@ -2,6 +2,11 @@ package chapter_1_stackandqueue;
 
 import java.util.Stack;
 
+/**
+ * 利用递归逆转栈
+ * 1. 弹出栈顶元素top，如果栈为空，则返回top，如果栈不为空，继续递归上述行为，并将top重新入栈
+ * 2. 直到弹出原栈最后一个元素时，之前弹出元素已经先后入栈，再将最后一个元素入栈
+ */
 public class Problem_03_ReverseStackUsingRecursive {
 
 	public static void reverse(Stack<Integer> stack) {
