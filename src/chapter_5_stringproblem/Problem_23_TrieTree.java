@@ -1,10 +1,13 @@
 package chapter_5_stringproblem;
 
+/**
+ * 前缀树问题
+ */
 public class Problem_23_TrieTree {
 
 	public static class TrieNode {
-		public int path;
-		public int end;
+		public int path; // 经过某个节点的次数
+		public int end; // 以某个节点结尾的次数
 		public TrieNode[] map;
 
 		public TrieNode() {
@@ -104,6 +107,7 @@ public class Problem_23_TrieTree {
 		System.out.println(trie.search("zuo"));
 		trie.delete("zuo");
 		System.out.println(trie.search("zuo"));
+
 		trie.insert("zuoa");
 		trie.insert("zuoac");
 		trie.insert("zuoab");
@@ -111,7 +115,8 @@ public class Problem_23_TrieTree {
 		trie.delete("zuoa");
 		System.out.println(trie.search("zuoa"));
 		System.out.println(trie.prefixNumber("zuo"));
-
+		System.out.println(trie.root.path);
+		System.out.println(trie.root.end);
 	}
 
 }
